@@ -1,0 +1,44 @@
+https://www.liaoxuefeng.com/wiki/896043488029600/897271968352576  --git学习
+
+git config  --global user.info (global全局设置)  设置git信息
+
+
+ls    查看仓库文件
+
+git status ； 查看仓库状态
+
+git add <file>;	添加到仓库
+
+git commit -m "description"  提交
+
+git diff   （git diff HEAD -- <file> 和提交的版本比对）查看修改内容
+
+git log       (--pretty==oneline) 查看提交记录
+
+git reset -hard #id(退回到指定id版本)  HEAD^ （HEAD~num）  ;回退版本 ^代表一个提交的版本 
+
+git reflog ；查看命令记录
+
+
+.git文件 版本库  --stage(暂存区）master(分支) HEAD分支的指针
+
+git add 提交到暂存区 git commit 上传到分支
+
+
+git checkout -- <file> 撤销修改
+
+git reset HEAD <file> 撤销暂存区的文件
+
+
+---------远程仓库------
+
+$ ssh-keygen -t rsa -C "youremail@example.com"  --创建ssh key
+
+
+git remote add origin git@github.com:github_username/reposity_name.git   远程关联仓库
+
+git remote remove origin  -- 取消远程关联
+
+
+git push orgin master ;(由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来)
+git 推送本地至远程仓库
