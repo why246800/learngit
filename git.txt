@@ -83,3 +83,11 @@ git cherry-pick <branchid>  合并指定的分支
 git branch -D <branchname> 强行删除分支 ：主要是删除强行删除未合并的分支
 
 git rebase ;基变 rebase操作可以把本地未push的分叉提交历史整理成直线；
+
+git tag <tagname> <branchid> ；打标签
+git show <tagname> 查看标签详情
+git tag -a <tagname> -m"describe" <branchname> 加上标签描述
+git tag -d <tagname> 删除标签
+git push origin <tagname> 推送标签到远程仓库
+git push origin --tags ;推送所有标签到远程仓库
+git push origin :refs/tage/<tagname> ；删除远程标签
