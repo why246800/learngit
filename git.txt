@@ -1,5 +1,7 @@
 https://www.liaoxuefeng.com/wiki/896043488029600/897271968352576  --git学习
 
+github 加载慢 https://zhuanlan.zhihu.com/p/93436925
+
 git config  --global user.info (global全局设置)  设置git信息
 
 
@@ -57,6 +59,8 @@ git switch -c <branchname> ; 创建并切换分支相比于checkout 更易理解
 
 git branch ；查看当前分支
 
+git branch -a; 可以查看远程所有分支
+
 git merge ; 合并分支
 
 git branch -d <branchname> ;删除分支  至少要有一条分支 否者会删除失败
@@ -91,3 +95,19 @@ git tag -d <tagname> 删除标签
 git push origin <tagname> 推送标签到远程仓库
 git push origin --tags ;推送所有标签到远程仓库
 git push origin :refs/tage/<tagname> ；删除远程标签
+
+
+
+$ git config --global color.ui true  这样，Git会适当地显示不同的颜色
+
+
+创建 .gitignore文件 忽略特殊文件
+
+
+配置别名 git config --global alias.<别名> <指令名称>
+
+cat .git/config 查看全局别名配置文件 当前配置仓库配置文件在 .gitconfig文件
+
+搭建git服务器 https://www.liaoxuefeng.com/wiki/896043488029600/899998870925664
+
+图形操作工具Sourcetree https://www.sourcetreeapp.com/
